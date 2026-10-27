@@ -1,0 +1,20 @@
+
+name: Pencil API Daily Check-in
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check task status
+        run: |
+          echo "Daily task started."
+          echo "Official check-in endpoint not configured."
+          echo "No sign-in request was sent."
